@@ -30,3 +30,4 @@ New things we learned about today:
 1. Enumerations
 2. instanceof keyword
 3. How to work with a multifile Java program in VS Code 
+4. Brief into to annotations, mainly @Override 
