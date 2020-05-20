@@ -1,3 +1,5 @@
+import java.time.LocalDateTime;
+
 public abstract class Department {
     private String deptName;
     private int numEmployees;
