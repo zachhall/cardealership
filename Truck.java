@@ -1,5 +1,3 @@
-package cardealership;
-
 public class Truck extends Vehicle {
     // Simple Truck constructor inheriting all of the methods and properties of
     // Vehicle

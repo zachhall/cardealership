@@ -1,5 +1,3 @@
-package cardealership;
-
 public class SUV extends Vehicle {
     // Simple SUV constructor inheriting all of the methods and properties of
     // Vehicle

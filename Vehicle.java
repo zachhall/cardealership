@@ -1,5 +1,3 @@
-package cardealership;
-
 public class Vehicle {
     // Class properties (notice they're private, so we'll need getters/setters)
     private String VIN, make, model, color;
