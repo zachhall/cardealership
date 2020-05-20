@@ -3,10 +3,11 @@ public class Vehicle {
     private String VIN, make, model, color;
     private double wholesaleCost, retailPrice;
     private int modelYear;
+    private VehicleClassification vehicleClass;
 
     // Our constructor with all properties given
     public Vehicle(String VIN, double wholesaleCost, double retailPrice, int modelYear, String make, String model,
-            String color) {
+            String color, VehicleClassification vehicleClass) {
         this.VIN = VIN;
         this.wholesaleCost = wholesaleCost;
         this.retailPrice = retailPrice;
@@ -14,6 +15,7 @@ public class Vehicle {
         this.make = make;
         this.model = model;
         this.color = color;
+        this.vehicleClass = vehicleClass;
     }
 
     // Getters
@@ -45,6 +47,10 @@ public class Vehicle {
         return color;
     }
 
+    public VehicleClassification getVehicleClass() {
+        return vehicleClass;
+    }
+
     // Setters
     public void setVin(String VIN) {
         this.VIN = VIN;
@@ -72,6 +78,10 @@ public class Vehicle {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public void setVehicleClass(VehicleClassification vehicleClass) {
+        this.vehicleClass = vehicleClass;
     }
 
     @Override // Annotation telling us and compiler that we are
