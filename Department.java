@@ -15,11 +15,16 @@ public abstract class Department {
         this.numEmployees = numEmployees;
     }
 
-    public void printIsOpen(List<Department> depts, LocalDateTime today) {
+    public static void printIsOpen(List<Department> depts, LocalDateTime today) {
         // Cycle through each department in provided List
         for (Department d : depts) {
             // Print out name of Dept and return if that Dept is open today
             System.out.println(d.toString() + " is open today?" + d.isOpenToday(today));
+            // Use instanceof keyword to test if item in List is
+            // of a certain object or data type
+            if (d instanceof ServiceDepartment) {
+                System.out.println(d.toString() + " only closes on Sundays.");
+            }
         }
     }
 
