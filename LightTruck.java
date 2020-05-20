@@ -38,6 +38,10 @@ public class LightTruck extends Vehicle {
         this.truckWeight = weight;
     }
 
+    public void setGrossCombinedWeight() {
+        this.grossCombinedWeight = this.truckWeight + this.towingCapacity;
+    }
+
     public void setGrossCombinedWeight(long weight) {
         this.grossCombinedWeight = weight;
     }
