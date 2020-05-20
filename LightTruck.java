@@ -38,10 +38,12 @@ public class LightTruck extends Vehicle {
         this.truckWeight = weight;
     }
 
+    // Method to automatically calculate GCW if no params given
     public void setGrossCombinedWeight() {
         this.grossCombinedWeight = this.truckWeight + this.towingCapacity;
     }
 
+    // Method Override to manually set GCW if param is provided
     public void setGrossCombinedWeight(long weight) {
         this.grossCombinedWeight = weight;
     }
