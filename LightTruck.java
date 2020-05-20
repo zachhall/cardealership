@@ -55,8 +55,7 @@ public class LightTruck extends Vehicle {
         // If 4WD, signify that in return string
         if (is4wd) {
             str += ", (4 WD)"; // appends string to end of our str variable
-        } else {
-            return str;
         }
+        return str;
     }
 }
