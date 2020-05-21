@@ -4,17 +4,23 @@ import java.util.List;
 
 public class Dealership {
     public static void main(String[] args) {
-        // Instanciate new object for each Department
-        ServiceDepartment sd = new ServiceDepartment();
-        FinanceDepartment fd = new FinanceDepartment();
-        SalesDepartment sales = new SalesDepartment();
 
-        // Add our departments to a List
-        List<Department> depts = new ArrayList<>();
-        depts.add(sd);
-        depts.add(fd);
-        depts.add(sales);
+        Leaseable lease = new Car("52430899FD", 33000.00, 42000.00, 2019, "Chevrolet", "Impala", "White",
+                VehicleClassification.NEW);
 
-        Department.printIsOpen(depts, LocalDateTime.now());
+        System.out.println("Number of months to lease: " + lease.getLeaseTerm());
+
+        // // Instanciate new object for each Department
+        // ServiceDepartment sd = new ServiceDepartment();
+        // FinanceDepartment fd = new FinanceDepartment();
+        // SalesDepartment sales = new SalesDepartment();
+
+        // // Add our departments to a List
+        // List<Department> depts = new ArrayList<>();
+        // depts.add(sd);
+        // depts.add(fd);
+        // depts.add(sales);
+
+        // Department.printIsOpen(depts, LocalDateTime.now());
     }
 }
