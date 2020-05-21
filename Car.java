@@ -1,5 +1,5 @@
 // Convention dictates that "implements" comes after "extends" if its present
-public class Car extends Vehicle implements Leaseable {
+public class Car extends Vehicle implements Leaseable, Discountable {
     // Simple Car constructor inheriting all of the methods and properties of
     // Vehicle
     public Car(String VIN, double wholesaleCost, double retailPrice, int modelYear, String make, String model,
@@ -13,6 +13,7 @@ public class Car extends Vehicle implements Leaseable {
         // Use the getTargetMargin method as its defined in our superclass (Vehicle)
     }
 
+    // Implementing methods from ILeaseable
     @Override
     public boolean isLeaseable() {
         return true;
@@ -26,6 +27,22 @@ public class Car extends Vehicle implements Leaseable {
     @Override
     public int getMaxMilesPerYear() {
         return 15_000;
+    }
+
+    // Implementing methods from IDiscountable
+    @Override
+    public float getMaximumDiscountPct() {
+        return 18.5f;
+    }
+
+    @Override
+    public float getPersonDiscount() {
+        return 12.5f;
+    }
+
+    @Override
+    public float getCorporateDiscount() {
+        return 20.0f;
     }
 
 }
