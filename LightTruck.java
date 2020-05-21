@@ -12,6 +12,8 @@ public class LightTruck extends Vehicle {
         this.grossCombinedWeight = this.towingCapacity + this.truckWeight;
 
         if (this.is4wd == true) {
+            // Create new TransferCase object if LightTruck is 4WD
+            // and store object in variable xferCase
             this.xferCase = new TransferCase();
         }
     }
