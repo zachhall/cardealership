@@ -5,14 +5,15 @@ import java.util.List;
 public class Dealership {
     public static void main(String[] args) {
 
-        LightTruck lt = new LightTruck("234JLKD234", 48000.00, 62000.00, 2019, "Chevrolet", "Silverado", "Silver",
-                10000L, 90000L, true, VehicleClassification.NEW);
+        // LightTruck lt = new LightTruck("234JLKD234", 48000.00, 62000.00, 2019,
+        // "Chevrolet", "Silverado", "Silver",
+        // 10000L, 90000L, true, VehicleClassification.NEW);
 
-        if (lt.getIs4wd()) {
-            int gears = lt.xferCase.getNumGears();
-            System.out.println("Number of Gears: " + gears);
-        }
-        lt.printVehicleType();
+        // if (lt.getIs4wd()) {
+        // int gears = lt.xferCase.getNumGears();
+        // System.out.println("Number of Gears: " + gears);
+        // }
+        // lt.printVehicleType();
 
         // Leaseable lease = new Car("52430899FD", 33000.00, 42000.00, 2019,
         // "Chevrolet", "Impala", "White",
