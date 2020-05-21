@@ -38,6 +38,13 @@
 * Why is this important? Why use a factory instead of relying on the new keyword?
   - **abstraction** and **insulation**
 
+## New Stuff we covered today
+
+1. Factory Pattern (and Abstraction)
+2. Implementing multiple Interfaces
+3. Generic class (focusing on generic elements)
+4. Composing objects at another objects creation
+
 ---
 
 ## When to use abstract classes, generic classes, and interfaces
