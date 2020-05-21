@@ -34,3 +34,6 @@
 - a method for creating objects without exposing the logic needed for creation
 - SUPER common pattern in OOP
 - using a Factory insulates the consumer from the actual class implementaion
+
+* Why is this important? Why use a factory instead of relying on the new keyword?
+  - **abstraction** and **insulation**

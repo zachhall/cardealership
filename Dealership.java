@@ -21,17 +21,25 @@ public class Dealership {
 
         // System.out.println("Number of months to lease: " + lease.getLeaseTerm());
 
-        // // Instanciate new object for each Department
+        // Instanciate new object for each Department
         // ServiceDepartment sd = new ServiceDepartment();
         // FinanceDepartment fd = new FinanceDepartment();
         // SalesDepartment sales = new SalesDepartment();
 
-        // // Add our departments to a List
-        // List<Department> depts = new ArrayList<>();
-        // depts.add(sd);
-        // depts.add(fd);
-        // depts.add(sales);
+        // Have Factory create new departments for us
+        Department sd = DepartmentFactory.CreateDepartment(DepartmentNames.SERVICE);
+        Department fd = DepartmentFactory.CreateDepartment(DepartmentNames.FINANCE);
+        Department sales = DepartmentFactory.CreateDepartment(DepartmentNames.SALES);
 
-        // Department.printIsOpen(depts, LocalDateTime.now());
+        // Add our departments to a List
+        List<Department> depts = new ArrayList<>();
+        depts.add(sd);
+        depts.add(fd);
+        depts.add(sales);
+
+        Department.printIsOpen(depts, LocalDateTime.now());
+
+        // Won't work, but example of calling on our Factory
+        Leaseable l = LeaseVehicleFactory.getLeaseableVehicleByVin("234JK234");
     }
 }
